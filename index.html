@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="resets.css">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 
@@ -15,46 +16,46 @@
     <img src="images/logo.svg" alt="Sunnyside" class="logo">
     <label for="hamburger"><img src="images/icon-hamburger.svg" alt="" class=""></label>
     <input type="checkbox" name="hamburger" id="hamburger">
-    <nav class="navbar-header" aria-label="main">
-      <a href="#projects">About</a>
-      <a href="#client-testimonials">Services</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
     <h1>We are creatives</h1>
   </header>
-  <main class="content" id="projects">
-    <article class="card article-one">
+  <main>
+    <article class="card transition">
       <h2>Transform your brand</h2>
       <p>We are a full-service creative agency specializing in helping brands grow fast.
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
       <a href="#">Learn more</a>
     </article>
-    <div class="img-decorative img-one">
+    <div class="img-decorative img-one transition" aria-hidden="true">
     </div>
-    <article class="card article-two">
+    <article class="card transition">
       <h2>Stand out to the right audience</h2>
       <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
         build
         and extend your brand in digital places.</p>
       <a href="#">Learn more</a>
     </article>
-    <div class="img-decorative img-two">
+    <div class="img-decorative img-two transition" aria-hidden="true">
     </div>
-    <article class="article-graphic">
+    <article class="article-graphic transition">
       <h2>Graphic design</h2>
       <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
         potential
         clients’ attention.</p>
     </article>
-    <article class="article-photography">
+    <article class="article-photography transition">
       <h2>Photography</h2>
       <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
       </p>
     </article>
-    <section class="client-testimonials" id="client-testimonials">
+    <section class="client-testimonials">
       <h2>Client testimonials</h2>
-      <figure class="testimonial">
+      <figure class="testimonial transition">
         <img src="images/image-emily.jpg" alt="Emily R">
         <figcaption>
           <blockquote>
@@ -67,7 +68,7 @@
           <small>Marketing Director</small>
         </figcaption>
       </figure>
-      <figure class="testimonial">
+      <figure class="testimonial transition">
         <img src="images/image-thomas.jpg" alt="Thomas S">
         <figcaption>
           <blockquote>
@@ -81,7 +82,7 @@
           <small>Chief Operating Officer</small>
         </figcaption>
       </figure>
-      <figure class="testimonial">
+      <figure class="testimonial transition">
         <img src="images/image-jennie.jpg" alt="Jennie F.">
         <figcaption>
           <blockquote>
@@ -95,18 +96,34 @@
         </figcaption>
       </figure>
     </section>
-    <div class="gallery">
+    <div class="gallery transition">
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
+      </picture>
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/desktop/image-gallery-orange.jpg">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="orange">
+      </picture>
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/desktop/image-gallery-cone.jpg">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="cone">
+      </picture>
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugarcubes">
+      </picture>
     </div>
   </main>
   <footer class="footer">
     <img src="images/logo.svg" alt="Sunnyside" class="logo">
-    <nav class="navbar-footer" aria-label="footer">
+    <nav>
       <ul class="menu-footer">
-        <li><a href="#projects">About</a></li>
-        <li><a href="#client-testimonials">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
-      <ul class="contact" id="contact">
+      <ul class="contact">
         <li><a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
         <li><a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a></li>
         <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
@@ -114,8 +131,7 @@
       </ul>
     </nav>
     <div>
-      Challenge by <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef"
-        target="_blank">Frontend Mentor</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Martha Mendoza</a>.
     </div>
   </footer>
